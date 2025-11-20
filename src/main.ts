@@ -240,8 +240,6 @@ app.innerHTML = `
         <div class="portrait-frame">
           <img src="/images/ME.jpeg" alt="Portrait of Gokhan Guner" loading="lazy" />
         </div>
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
       </div>
     </section>
 
