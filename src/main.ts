@@ -41,7 +41,7 @@ const navLinks: NavLink[] = [
 const heroPhrases = ['Full-stack Developer', 'System Explorer', 'Curious Builder'];
 
 const focusStats = [
-  { value: '2+', label: 'Years coding' },
+  { value: '2.5+', label: 'Years coding' },
   { value: '8', label: 'Projects shipped' },
   { value: '2', label: 'AI projects built' },
 ];
@@ -52,11 +52,15 @@ const skillCategories: SkillCategory[] = [
     groups: [
       {
         label: 'Confident with',
-        items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Express.js', 'PHP', 'MySQL', 'Git & GitHub', 'Docker', 'Figma', 'Craft CMS'],
+        items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Express.js', 'PHP', 'MySQL'],
+      },
+      {
+        label: 'Tools & platforms',
+        items: ['Figma', 'Docker', 'Craft CMS', 'Git', 'GitHub'],
       },
       {
         label: 'Learning',
-        items: ['Python'],
+        items: ['Python (AI & automation)'],
       },
     ],
   },
@@ -69,7 +73,7 @@ const skillCategories: SkillCategory[] = [
       },
       {
         label: 'Learning',
-        items: ['French'],
+        items: ['French (beginner)'],
       },
     ],
   },
@@ -85,17 +89,17 @@ const projects: Project[] = [
     highlight: 'Full-stack app',
   },
   {
-    title: 'Aanwezigheidsapp (QR)',
+    title: 'Attendance App (QR)',
     description:
-      'Mobile app (coming soon) to scan QR codes for attendance purposes. Used in the classroom for attendance purposes. Developed in a team of 4 students.',
-    stack: ['React Native', 'Expo', 'Typescript'],
+      'Mobile app (coming soon) to scan QR codes for classroom attendance. Built together with a team of four students.',
+    stack: ['React Native', 'Expo', 'TypeScript'],
     link: '#',
     highlight: 'Mobile — coming soon',
   },
   {
-    title: 'Trajectopvolgsysteem',
+    title: 'Student Progress Tracker',
     description:
-      'Een opvolgsysteem voor trajectgesprekken met studenten van het graduaat programmeren. Docenten houden afspraken, notities en vervolgstappen centraal bij.',
+      'A follow-up system for coaching meetings with programming students, helping lecturers log appointments, notes, and next steps in one place.',
     stack: ['Next.js', 'TypeScript', 'Prisma', 'Strapi'],
     link: '#',
     highlight: 'Student coaching - coming soon',
@@ -105,19 +109,23 @@ const projects: Project[] = [
 const timeline: TimelineItem[] = [
   {
     period: '2024 — Today',
-    title: 'Student @ Arteveldehogeschool',
-    detail:
-      'Started the programming track, diving deeper into software engineering fundamentals while working my way toward becoming a full-stack engineer.',
+    title: 'Applied Computer Science @ Arteveldehogeschool',
+    detail: 'Focusing on full-stack development with Node.js, TypeScript, Express, SQLite and modern web frameworks. Building production-ready projects and learning how to design clean backend systems.',
   },
   {
-    period: '2022 - 2024',
-    title: 'First steps in web development',
-    detail: 'Published my first one-page website and got introduced to WordPress as a CMS, learning how templating and plugins speed up delivery.',
+    period: '2023 - 2024',
+    title: 'Discovering AI & automation',
+    detail: 'Started learning how AI models, chatbots and automation tools work behind the scenes. Explored APIs, prompts, voicebots and early bot logic the foundation for the AI-driven projects I build today.',
+  },
+  {
+    period: '2022 - 2023',
+    title: 'Building my first real websites',
+    detail: 'Created small responsive websites with HTML, CSS and simple animations. Designed and structured portfolio pages in WordPress and learned the basics of front-end layout and visual design.',
   },
   {
     period: '2021 - 2022',
-    title: 'First lines of code',
-    detail: 'During my multimedia studies I started building simple HTML/CSS sites and picked up Adobe tools to translate ideas into visuals.',
+    title: 'First steps into web development',
+    detail: 'Built simple static pages using only HTML and CSS. This early phase gave me the core understanding of structure, layout and styling that shaped my journey into full-stack development.',
   },
 ];
 
@@ -151,7 +159,7 @@ const renderProjects = () =>
             <div class="stack">${renderBadges(project.stack)}</div>
           </div>
           <a class="ghost-link" href="${project.link}" target="_blank" rel="noreferrer">
-            Visit project →
+            Source code →
           </a>
         </article>
       `,
@@ -227,7 +235,7 @@ app.innerHTML = `
         <p class="eyebrow">Hi, I am</p>
         <h1>Gökhan Güner</h1>
         <p class="hero-lead">
-          22-year-old programming student in Ghent, focused on full-stack builds, AI experiments, and automation that keeps moving faster.
+          Full-stack development student in Ghent, building fast, reliable applications with a focus on AI, automation, and modern web technology.
         </p>
         <p class="typewriter">I am a <span id="typewriter"></span></p>
         <div class="cta-group">
@@ -248,10 +256,10 @@ app.innerHTML = `
         <p class="eyebrow">About me</p>
         <h2>Junior full-stack developer</h2>
         <p>
-          I study Applied Computer Science at Arteveldehogeschool. I enjoy figuring out how data moves through a system, what makes APIs reliable, and how to design maintainable backend layers.
+          I study Applied Computer Science at Arteveldehogeschool, focusing on full-stack development with Node.js, TypeScript and modern web frameworks. I enjoy designing clean backend logic, optimizing data flow, and building reliable APIs.
         </p>
         <p>
-          When I am not coding, I am sketching system ideas, taking notes from articles, or exploring new tooling that can make me faster and sharper as a developer.
+          Outside of coding, I explore new developer tools, take notes from articles, and sketch ideas that help me grow faster as a developer.
         </p>
       </div>
       <div class="panel-card" data-reveal>
