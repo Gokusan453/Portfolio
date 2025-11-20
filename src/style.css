@@ -1,14 +1,14 @@
 :root {
   font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #e7ecff;
-  background-color: #050811;
   line-height: 1.5;
   font-weight: 400;
+  color: #e7ecff;
+  background-color: #050811;
   --bg: #050811;
   --surface: rgba(10, 14, 32, 0.8);
   --surface-strong: rgba(15, 20, 43, 0.95);
   --border: rgba(255, 255, 255, 0.08);
-  --accent: linear-gradient(120deg, #7d5bff, #54d1ff, #ff8dc7);
+  --accent: linear-gradient(120deg, #7d5bff, #54d1ff);
   --accent-strong: #8b5dff;
   --text-muted: rgba(231, 236, 255, 0.7);
 }
@@ -423,6 +423,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 0.85rem;
   color: var(--text-muted);
+  margin: 0.2rem;
 }
 
 .project-card h3 {
@@ -565,9 +566,7 @@ main {
   .hero-visual {
     order: -1;
   }
-}
 
-@media (max-width: 720px) {
   .app-shell {
     padding: 1.5rem 1rem 2.5rem;
   }
@@ -606,6 +605,14 @@ main {
     transform: translateY(-8px);
     pointer-events: none;
     transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .site-header.is-open nav {
@@ -648,5 +655,9 @@ main {
 
   .contact {
     grid-template-columns: 1fr;
+  }
+
+  .contact-item strong {
+    display: none;
   }
 }
